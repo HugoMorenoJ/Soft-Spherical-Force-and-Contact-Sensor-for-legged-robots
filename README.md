@@ -14,3 +14,14 @@ The figure shows a graphical representation of different situations that could l
 ### Operating Sensor
 ![Operating Sensor](ope.gif)
 
+## Requerimets
+The package is made for ROS, the development board is an arduino mega 2560 and the manometric pressure sensor is a Mps20n0040d with Hx710b.
+
+## Reference
+If this code is useful for you please consider citing our work appropriately. Thanks.
+
+## Contact
+For more questions, please feel free to contact us.
+
+* hugoamj@gmail.com
+* luisandresmj@gmail.com
