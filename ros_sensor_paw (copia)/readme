@@ -1,0 +1,22 @@
+Hugo Alberto Moreno Jimenez
+
+//The arduino folder contains the code for the Arduino mega 2560 Arduino board.
+//A0 and A1 are the inputs for the Latitude membrane.
+//A2 and A3 are the inputs for the Longitude membrane.
+
+//D4 and D5 are the out and clock inputs of the MPS20N0040D sensor with Hx710b.
+//////////////////////////////////////
+//In ROS after running
+
+$ roscore
+$ rosrun rosserial_python serial_node.py /dev/ttyACM0 //according to the port of your device
+
+// it will publish /contact_paw which has the raw sensor information
+// after running the code
+
+$ rosrun lec_sen lec_sen.py
+
+// It will publish in /sensor_contact the processed output of the sensor information, it is necessary to calculate the calibration parameters against some measuring instrument.
+// When running the code
+$ rosrun prom_lec_sen prom_lec_sen.py
+// it will filter the information with a Moving Average Filter and will be published in /med_corr_sen
