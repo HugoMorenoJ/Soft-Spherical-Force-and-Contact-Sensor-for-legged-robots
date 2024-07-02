@@ -14,6 +14,9 @@ The figure shows a graphical representation of different situations that could l
 ### Operating Sensor
 ![Operating Sensor](ope.gif)
 
+### Demonstration video
+https://github.com/HugoMorenoJ/Soft-Spherical-Force-and-Contact-Sensor-for-legged-robots/assets/20323834/2d300e93-8197-4f58-8291-f6e77cbac087
+
 ## Requerimets
 The package is made for ROS, the development board is an arduino mega 2560 and the manometric pressure sensor is a Mps20n0040d with Hx710b.
 
