@@ -16,8 +16,30 @@ The figure shows a graphical representation of different situations that could l
 ### Demonstration video on youtube
 [![Alt text](https://img.youtube.com/vi/8-yymz5p5xQ/1.jpg)](https://www.youtube.com/watch?v=8-yymz5p5xQ)
 ## Requerimets
-The package is made for ROS, the development board is an arduino mega 2560 and the manometric pressure sensor is a Mps20n0040d with Hx710b.
+The package is made for ROS Noetic, the development board is an arduino mega 2560 and the manometric pressure sensor is a Mps20n0040d with Hx710b.
+## Content
+### Project Overview  
+The project code is located in the `ros_sensor_paw` folder.  
 
+#### Arduino Code  
+The `Arduino/sensor` folder contains the code for the Arduino Mega 2560 board:  
+- **A0** and **A1**: Inputs for the latitude membrane.  
+- **A2** and **A3**: Inputs for the longitude membrane.  
+- **D4** and **D5**: Output and clock pins for the MPS20N0040D sensor with the HX710B chip.  
+
+The collected data is published to the `/contacto_paw` topic.  
+
+#### ROS Packages  
+In the `catkin_ws/src` folder, two ROS Noetic packages are included:  
+
+1. **`lec_sen`**  
+   - Reads and publishes sensor data acquired by the Arduino board after adjusting the values.  
+   - Data is published to the `/Sensor_contacto` topic.  
+
+2. **`prom_lec_sen`**  
+   - Filters the data of `/Sensor_contacto` using a Moving Average Filter to reduce noise.  
+   - Processed data is published to the `/med_corr_sen` topic.  
+  
 ## Reference
 If this code is useful for you please consider citing our work appropriately. Thanks.
 
