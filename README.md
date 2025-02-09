@@ -48,4 +48,4 @@ For more questions, please feel free to contact us.
 
 * hugoamj@gmail.com
 * luisandresmj@gmail.com
-* gflorescolunga@gmail.com
+* gerardo.flores@tamiu.com
