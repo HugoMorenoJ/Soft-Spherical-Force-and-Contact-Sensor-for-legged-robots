@@ -1,5 +1,5 @@
-# Soft Spherical Paw Sensor for Enhanced Proprioception and Force Measurement in Legged Robots.
-In this repository you can find the code and videos about the article “Soft Spherical Paw Sensor for Enhanced Proprioception and Force Measurement in Legged Robots” which is a sensor based on flexible conductive membranes, has the ability to simultaneously provide the position of the contact point and the force exerted.
+# Soft Paw Sensor for Tactile and Force Sensing in Legged Robots.
+In this repository you can find the code and videos about the article “Soft Paw Sensor for Tactile and Force Sensing in Legged Robots” which is a sensor based on flexible conductive membranes, has the ability to simultaneously provide the position of the contact point and the force exerted.
 
 ## Abstract
 
